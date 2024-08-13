@@ -94,6 +94,77 @@ header .hamburger-menu-icon {
 
 /* Navbar Section End */
 
+/* Hero Section Start */
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 575px;
+}
+
+.hero .left-container {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero .left-container p:first-child {
+    color: var(--primary-color-hover);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.hero .left-container h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.hero .left-container p:nth-child(3) {
+    color: var(--text-color);
+}
+
+.hero .left-container .hero-btn-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero .left-container .hero-btn-group .hero-btn {
+    font-weight: 500;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 10px 22px;
+    border-radius: 7px;
+    transition: background-color 0.1s ease-in;
+}
+
+.hero .left-container .hero-btn-group .hero-btn:hover {
+    background-color: var(--primary-color-hover);
+}
+
+.hero .left-container .hero-btn-group .hero-btn-2 {
+    background-color: var(--text-color);
+}
+
+.hero .left-container .hero-btn-group .hero-btn-2:hover {
+    background-color: #323232;
+}
+
+.hero .right-container {
+    width: 45%;
+}
+
+.hero .right-container img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Hero Section End */
+
 /* Making The Site Responsive */
 
 /* for tablets */
@@ -116,6 +187,26 @@ header .hamburger-menu-icon {
     }
 
     /* Navbar Section End */
+
+    /* Hero Section Start */
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .hero .left-container,
+    .hero .right-container {
+        width: 100%;
+    }
+
+    .hero .left-container{
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero .right-container {
+        padding: 3rem;
+    }
+    /* Hero Section End */
 }
 
 /* for laptops */
