@@ -19,6 +19,7 @@
 
     /* sizes */
     --tablet-size: 768px;
+    --laptop-size: 1150px;
 }
 
 .container {
@@ -97,12 +98,7 @@ header .hamburger-menu-icon {
 
 /* for tablets */
 @media only screen and (max-width: 768px) {
-    .container {
-        padding: 0 20px;
-    }
-
     /* Navbar Section Start */
-
     header .navbar .logo {
         font-size: 1.5rem;
     }
@@ -120,4 +116,11 @@ header .hamburger-menu-icon {
     }
 
     /* Navbar Section End */
+}
+
+/* for laptops */
+@media only screen and (max-width: 1151px) {
+    .container {
+        padding: 0 1rem;
+    }
 }
