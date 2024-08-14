@@ -16,6 +16,8 @@
     --primary-color: #6468ec;
     --primary-color-hover: #5055f3;
     --text-color: #151515;
+    --primary-bg: #fff;
+    --secondary-bg: #ececec;
 
     /* sizes */
     --tablet-size: 768px;
@@ -156,6 +158,7 @@ header .hamburger-menu-icon {
 
 .hero .right-container {
     width: 45%;
+    padding: 1rem 0px 1rem 2rem;
 }
 
 .hero .right-container img {
@@ -165,53 +168,43 @@ header .hamburger-menu-icon {
 
 /* Hero Section End */
 
-/* Making The Site Responsive */
+/* Mini Hero Section Start */
 
-/* for tablets */
-@media only screen and (max-width: 768px) {
-    /* Navbar Section Start */
-    header .navbar .logo {
-        font-size: 1.5rem;
-    }
-
-    header .navbar .nav-items {
-        display: none;
-    }
-
-    header .contact-us-btn {
-        display: none;
-    }
-
-    header .hamburger-menu-icon {
-        display: flex;
-    }
-
-    /* Navbar Section End */
-
-    /* Hero Section Start */
-    .hero .container {
-        flex-direction: column;
-    }
-
-    .hero .left-container,
-    .hero .right-container {
-        width: 100%;
-    }
-
-    .hero .left-container{
-        text-align: center;
-        align-items: center;
-    }
-
-    .hero .right-container {
-        padding: 3rem;
-    }
-    /* Hero Section End */
+.mini-hero .container {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-/* for laptops */
-@media only screen and (max-width: 1151px) {
-    .container {
-        padding: 0 1rem;
-    }
+.mini-hero .container > h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 800;
 }
+
+.mini-hero .inner-container {
+    padding: 30px 40px;
+    display: grid;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    background-color: var(--secondary-bg);
+    border-radius: 12px;
+}
+
+.mini-hero .company {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    gap: 10px;
+}
+
+.mini-hero .company img {
+    height: 2rem;
+}
+
+/* Mini Hero Section End */
+
