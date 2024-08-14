@@ -61,6 +61,17 @@
     }
 
     /* Mini Hero Section End */
+
+    /* Our Advantages Section Start */
+    .our-advantages > .container {
+        padding: 2rem 3rem;
+    }
+
+    .our-advantages .advantage-cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* Our Advantages Section End */
 }
 
 /* for laptops */

@@ -16,8 +16,18 @@
     --primary-color: #6468ec;
     --primary-color-hover: #5055f3;
     --text-color: #151515;
+
+    /* Background Colors */
     --primary-bg: #fff;
     --secondary-bg: #ececec;
+
+    /* Card Colors */
+    --card-color-1: #3f7ad6;
+    --card-color-2: #f84874;
+    --card-color-3: #f7ab51;
+    --card-color-4: #3faeb0;
+    --card-color-5: #578a45;
+    --card-color-6: #5a5588;
 
     /* sizes */
     --tablet-size: 768px;
@@ -187,7 +197,6 @@ header .hamburger-menu-icon {
 .mini-hero .inner-container {
     padding: 30px 40px;
     display: grid;
-    /* flex-wrap: wrap; */
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
     background-color: var(--secondary-bg);
@@ -208,3 +217,83 @@ header .hamburger-menu-icon {
 
 /* Mini Hero Section End */
 
+/* Our Advantages Section Start */
+
+.our-advantages {
+    background-color: var(--secondary-bg);
+    padding: 2rem 0;
+}
+
+.our-advantages > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.our-advantages > .container > h2 {
+    font-size: 2.2rem;
+}
+
+.our-advantages > .container > p {
+    max-width: 53rem;
+}
+
+.our-advantages .advantage-cards {
+    max-width: 53rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.our-advantages .advantage-card {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1.5rem;
+    border-radius: 1.2rem;
+}
+
+.our-advantages .advantage-card-1 {
+    background-color: var(--card-color-1);
+}
+
+.our-advantages .advantage-card-2 {
+    background-color: var(--card-color-2);
+}
+
+.our-advantages .advantage-card-3 {
+    background-color: var(--card-color-3);
+}
+
+.our-advantages .advantage-card-4 {
+    background-color: var(--card-color-4);
+}
+
+.our-advantages .advantage-card-5 {
+    background-color: var(--card-color-5);
+}
+
+.our-advantages .advantage-card-6 {
+    background-color: var(--card-color-6);
+}
+
+.our-advantages .advantage-card .card-icon {
+    --box-size: 70px;
+    width: var(--box-size);
+    height: var(--box-size);
+    padding: 1.2rem;
+    background-color: var(--primary-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.our-advantages .advantage-card img {
+    height: 100%;
+}
+/* Our Advantages Section End */
