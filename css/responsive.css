@@ -72,6 +72,14 @@
     }
 
     /* Our Advantages Section End */
+
+    /* Testimonials Section Start */
+    .testimonials > .container {
+        padding: 2rem;
+    }
+    .testimonials .cards {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* for laptops */
