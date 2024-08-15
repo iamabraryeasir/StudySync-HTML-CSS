@@ -34,6 +34,10 @@
     --laptop-size: 1150px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     max-width: 1150px;
     margin: 0 auto;
@@ -53,7 +57,8 @@ header .navbar {
     justify-content: space-between;
 }
 
-header .navbar .logo {
+header .navbar .logo,
+footer .logo {
     font-size: 2rem;
     font-weight: 700;
 }
@@ -63,7 +68,8 @@ header .navbar .logo a {
     gap: 5px;
 }
 
-header .navbar .logo img {
+header .navbar .logo img,
+footer .logo img {
     height: 1.7rem;
 }
 
@@ -427,3 +433,83 @@ header .hamburger-menu-icon {
     text-decoration: underline;
 }
 /* Newsletter Section End */
+
+/* Footer Section Start */
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-top {
+    padding: 2.5rem 0;
+    display: flex;
+}
+
+footer .footer-top .footer-header {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+footer .footer-top .footer-header h3 {
+    color: #616161;
+}
+
+footer .footer-top .footer-header ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+footer .footer-top .footer-links {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer .footer-top .footer-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+footer .footer-top .footer-links .products,
+footer .footer-top .footer-links .company,
+footer .footer-top .footer-links .support,
+footer .footer-top .footer-links .legal {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+footer .footer-bottom {
+    padding: 2rem 0;
+    border-top: 1px solid #b8b8b8;
+    text-align: center;
+}
+/* Footer Section End */
+
+/* Footing Button Start */
+aside .footing-btn {
+    --btn-size: 60px;
+    width: var(--btn-size);
+    height: var(--btn-size);
+    padding: 10px;
+    border-radius: 100px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: background-color 0.1s ease-in;
+    position: fixed;
+    bottom: 90px;
+    right: 110px;
+}
+
+aside .footing-btn img {
+    width: 100%;
+}
+
+aside .footing-btn:hover {
+    background-color: var(--primary-color-hover);
+}
+/* Footing Button End */
