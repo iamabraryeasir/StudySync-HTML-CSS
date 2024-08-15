@@ -63,11 +63,11 @@
     /* Mini Hero Section End */
 
     /* Our Advantages Section Start */
-    .our-advantages > .container {
+    .services > .container {
         padding: 2rem;
     }
 
-    .our-advantages .advantage-cards {
+    .services .advantage-cards {
         grid-template-columns: 1fr;
     }
 
@@ -80,11 +80,37 @@
     .testimonials .cards {
         grid-template-columns: 1fr;
     }
+    /* Testimonials Section End */
+
+    /* Newsletter Section Start */
+    .newsletter {
+        padding: 1.2rem 2rem;
+    }
+    .newsletter .left-container {
+        display: none;
+    }
+
+    .newsletter .right-container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .newsletter .right-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .newsletter .right-container form {
+        gap: 0.5rem;
+    }
 }
 
 /* for laptops */
 @media only screen and (max-width: 1151px) {
     .container {
         padding: 0 1rem;
+    }
+
+    .newsletter .container {
+        padding: 0;
     }
 }

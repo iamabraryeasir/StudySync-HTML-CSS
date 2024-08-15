@@ -219,12 +219,12 @@ header .hamburger-menu-icon {
 
 /* Our Advantages Section Start */
 
-.our-advantages {
+.services {
     background-color: var(--secondary-bg);
     padding: 2rem 0;
 }
 
-.our-advantages > .container {
+.services > .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,22 +232,22 @@ header .hamburger-menu-icon {
     gap: 2rem;
 }
 
-.our-advantages > .container > h2 {
+.services > .container > h2 {
     font-size: 2.2rem;
 }
 
-.our-advantages > .container > p {
+.services > .container > p {
     max-width: 53rem;
 }
 
-.our-advantages .advantage-cards {
+.services .advantage-cards {
     max-width: 53rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
-.our-advantages .advantage-card {
+.services .advantage-card {
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -257,31 +257,31 @@ header .hamburger-menu-icon {
     border-radius: 1.2rem;
 }
 
-.our-advantages .advantage-card-1 {
+.services .advantage-card-1 {
     background-color: var(--card-color-1);
 }
 
-.our-advantages .advantage-card-2 {
+.services .advantage-card-2 {
     background-color: var(--card-color-2);
 }
 
-.our-advantages .advantage-card-3 {
+.services .advantage-card-3 {
     background-color: var(--card-color-3);
 }
 
-.our-advantages .advantage-card-4 {
+.services .advantage-card-4 {
     background-color: var(--card-color-4);
 }
 
-.our-advantages .advantage-card-5 {
+.services .advantage-card-5 {
     background-color: var(--card-color-5);
 }
 
-.our-advantages .advantage-card-6 {
+.services .advantage-card-6 {
     background-color: var(--card-color-6);
 }
 
-.our-advantages .advantage-card .card-icon {
+.services .advantage-card .card-icon {
     --box-size: 70px;
     width: var(--box-size);
     height: var(--box-size);
@@ -293,7 +293,7 @@ header .hamburger-menu-icon {
     border-radius: 100px;
 }
 
-.our-advantages .advantage-card img {
+.services .advantage-card img {
     height: 100%;
 }
 /* Our Advantages Section End */
@@ -346,3 +346,84 @@ header .hamburger-menu-icon {
     color: var(--primary-color-hover);
 }
 /* Testimonials Section End */
+
+/* Newsletter Section Start */
+
+.newsletter {
+    padding: 1.2rem 0;
+}
+
+.newsletter .container {
+    background-color: var(--secondary-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newsletter .left-container {
+    width: 50%;
+}
+
+.newsletter .left-container .image-container {
+    width: 100%;
+    max-height: 380px;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.newsletter .left-container img {
+    width: 100%;
+}
+
+.newsletter .right-container {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    padding: 3rem;
+}
+
+.newsletter .right-container h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color-hover);
+}
+
+.newsletter .right-container form {
+    display: flex;
+    gap: 1rem;
+}
+
+.newsletter .right-container form * {
+    padding: 0.5rem 0.8rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.newsletter .right-container form input {
+    border: 1px solid #838383;
+}
+
+.newsletter .right-container form button {
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+}
+.newsletter .right-container form button:hover {
+    background-color: var(--primary-color-hover);
+}
+
+.newsletter .right-container p:last-child {
+    font-size: 0.74rem;
+}
+
+.newsletter .right-container p:last-child a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+/* Newsletter Section End */
